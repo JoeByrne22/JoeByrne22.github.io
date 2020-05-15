@@ -1,0 +1,341 @@
+
+  /* GLOBAL */
+
+  @font-face {
+    font-family: regular;
+    src: url(./fonts/Lalezar/Lalezar-Regular.ttf);
+  }
+  
+  body {
+    font-family: regular;
+  }
+ 
+  .paragraphFontStyle {
+    font-size: 25px;
+  }
+
+  .center {
+    text-align: center;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  p, h3 {
+    color: white !important;
+  }
+
+  h1 {
+    color: #febc64;
+  }
+
+  @media only screen and (min-width: 768px) {
+    p{
+      font-size: 20px;
+    }
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+
+  @media only screen and (min-width: 768px) {
+    #section2 .img-profile{
+      padding: 11rem;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    #section2 {
+      margin: -80rem 10rem 0;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    #section2 .row{
+      flex-wrap: wrap;
+    }
+  }
+
+
+  @media only screen and (min-width: 768px) {
+    #section4 .row{
+      margin: 0rem 11rem;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    #section4 .thumbnail{
+      height: 35%
+  }
+}
+
+
+ /* NAVBAR  */
+  .navbar-custom {
+      background-color: #323070;
+      color:#ffffff;
+      border-radius:0;
+  }
+  
+  .navbar-custom .navbar-nav > li > a {
+      color:#febc64;
+  }
+  .navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+      color: #ffffff;
+      background-color:#febc64 ;
+  }
+  .navbar-custom .navbar-brand {
+      color:#eeeeee;
+  }
+
+  .navbar li:hover {
+    opacity: 0.8;
+  }
+
+  .navbar {
+    opacity: 0;
+    visibility:"hidden";
+    position: fixed !important;
+    width: 100% !important;
+    z-index: 2;
+  }
+  
+
+
+
+  /* SECTION1 */
+  
+#section1 .bcg {
+  height: 100%;
+    width: 100%;
+}
+
+#section1 .bcg img{
+  height: 100%;
+    width: 100%;
+}
+
+.name_container {
+  overflow-x: hidden;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18rem;
+}
+
+.name_container div{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.name_container .first_name, .name_container .profession{
+  font-size: 150px;
+  position: relative;
+  left: 300px;
+  /* -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white; */
+  opacity: 0;
+  visibility: hidden;
+}
+
+.name_container .last_name{
+  font-size: 150px;
+  position: relative;
+  right: 300px;
+  /* -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white; */
+  opacity: 0;
+  visibility: hidden;
+}
+
+.first_name {
+  color: #323070;
+}
+
+.last_name {
+  color: #9d5a87;
+}
+
+.profession {
+  color: #febc64;
+}
+
+
+
+
+
+.mouse {
+  display: fixed;
+  margin: 0 auto;
+  width: 26px;
+  height: 46px;
+  border-radius: 13px;
+  border: 2px solid #febc64;
+  position: absolute;
+  bottom: 40px;
+  position: absolute;
+  left: 50%;
+  margin-left: -26px;
+}
+.mouse span {
+  display: block;
+  margin: 6px auto;
+  width: 2px;
+  height: 2px;
+  border-radius: 4px;
+  background: #febc64;
+  border: 1px solid transparent;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
+  animation-name: scroll;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+
+
+
+
+
+  /* SECTION2 */
+
+  #section2 {
+    margin: -20rem 10rem 0;
+    background:none;
+    background-size: 100% auto;
+  }
+  
+  #section2 .row{ 
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+
+
+  #section2 .panel-intro-container {
+      display: flex;
+      align-items: center;
+  }
+
+  #section2 .img-profile {
+    padding: 2rem;
+  }
+
+/* SECTION3 */
+  #section3 {
+    margin: 0 10rem;
+    background: none;
+    background-size: 100% auto;
+    padding-bottom: 5%;
+  }
+    
+  #section3 .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+    
+  #section3 .fab{
+    padding: 3rem;
+    color: #9d5a87;
+  }
+
+  /* SECTION4 */
+  #section4 {
+    margin: 0 10rem;
+    background:none;
+    background-size: 100% auto;
+    padding-top: 5%;
+  }
+
+
+  #section4 .project_img_container {
+    height: 50%;
+    overflow: hidden;
+  }
+  #section4 .thumbnail {
+    background-color:#323070 !important;
+    height: 350px;
+  }
+
+  #section4 .row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+  #section5 {
+    background:none;
+    background-size: 100% auto;
+    padding-top: 5%;
+  }
+  
+  #mainPage {
+    /* background: url('http://wallpoper.com/images/00/42/81/18/landscapes-minimalistic_00428118.jpg') repeat center fixed; */
+   -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: black;
+  }
+
+
+  
+  .panel-transparent {
+          background: none;
+      }
+  
+      .panel-transparent .panel-heading{
+          background-color:#323070 !important;
+
+      }
+  
+      .panel-transparent .panel-body{
+        background-color:#323070 !important;
+
+      }
+  
+  
+  .thumbnail a :hover {
+    opacity: 0.3;
+  }
